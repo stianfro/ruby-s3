@@ -24,5 +24,4 @@ while true
 	object.upload_file('/usr/src/app/test_file')
 
 	puts "Object key: #{object.key}, size: #{object.size}, number: #{a}"
-	sleep 0.3
 end
