@@ -3,7 +3,7 @@ require 'aws-sdk'
 
 endpoint = ENV['S3_ENDPOINT']
 
-credentials = Aws::SharedCredentials.new(profile_name: 'default')
+credentials = Aws::SharedCredentials.new(profile_name: 'default', path: '/usr/src/app/.aws')
 
 client = Aws::S3::Client.new(
 	region: 'us-east-1',
