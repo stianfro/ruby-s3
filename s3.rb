@@ -14,9 +14,7 @@ client = Aws::S3::Client.new(
 
 s3 = Aws::S3::Resource.new(client: client)
 
-# s3.bucket('hello-bucket').objects.each.delete
-
-a = 00001
+a = 1
 
 while true
 	a += 1
