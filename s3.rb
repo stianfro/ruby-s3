@@ -30,3 +30,4 @@ while true
 	puts "Object key: #{object.key}"
 	sleep 0.3
 end
+ 
