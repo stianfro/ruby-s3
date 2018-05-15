@@ -1,3 +1,3 @@
 #!/bin/bash
-fallocate -l $TEST_SIZE test_file
-ruby s3.rb
+fallocate -l $TEST_SIZE /usr/src/app/test_file
+ruby /usr/src/app/s3.rb

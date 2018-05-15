@@ -20,13 +20,8 @@ while true
 	a += 1
 	object = s3.bucket('hello-bucket').object("hello-object-#{a}")
 
-	object.put(
-		metadata: {
-			'hello' => 'world'
-		},
-		body: test_file,
-		server_side_encryption: 'AES256'
-	)
+	object.upload_file('/usr/src/app/test_file')
+
 	puts "Object key: #{object.key}"
 	sleep 0.3
 end
