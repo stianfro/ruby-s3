@@ -10,6 +10,6 @@ RUN bundle install
 
 COPY . .
 
-RUN chmod +x s3.rb
+RUN chmod +x s3.rb start.sh ;\
 
-CMD ["./s3.rb"]
+CMD ["./start.sh"]

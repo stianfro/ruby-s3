@@ -24,10 +24,9 @@ while true
 		metadata: {
 			'hello' => 'world'
 		},
-		body: 'Hello World!',
+		body: test_file,
 		server_side_encryption: 'AES256'
 	)
 	puts "Object key: #{object.key}"
 	sleep 0.3
 end
- 
